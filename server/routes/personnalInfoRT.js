@@ -1,18 +1,18 @@
 //~~~~~~~~~~Depedencies~~~~~~~~~~//
 
-let express = require("express"),
-    router  = express.Router(),
-    Content = require("../api/personnalInfoAPI.js");
+let express         = require("express"),
+    router          = express.Router(),
+    PersonnalInfo   = require("../api/personnalInfoAPI.js");
     
 //~~~~~~~~~~Routes~~~~~~~~~~~~~~~//
 
 router.route("/")
-      .get()
-      .post();
+      .get(PersonnalInfo.Api.GetPersonnalInfo)
+      .post(PersonnalInfo.Api.PostPersonnalInfo);
       
 router.route("/:id")
-      .put()
-      .delete();
+      .put(PersonnalInfo.Api.UpdatePersonnalInfo)
+      .delete(PersonnalInfo.Api.DeletePersonnalInfo);
      
 //~~~~~~~~~~Module Exports~~~~~~~//
 

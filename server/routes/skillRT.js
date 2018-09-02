@@ -2,7 +2,7 @@
 
 let express = require("express"),
     router  = express.Router(),
-    Skill   = require("../api/skillApi.js");
+    Skill   = require("../api/skillAPI.js");
 
 //~~~~~~~~~Routing~~~~~~~~~~~~//
 

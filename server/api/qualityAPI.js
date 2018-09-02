@@ -26,19 +26,44 @@ let Quality = mongoose.model("Quality", qualitySchema);
 //~~~~~~~~~~~~Api Methods~~~~~~~~~~~~~//
 
 Api.GetQuality = function(req, res){
-    throw new Error("Not implemented");
+    Quality.find()
+           .then((content) =>{
+                res.json(content);
+           })
+           .catch((err) => {
+                if(err)
+                    console.log(err);
+           });
 }
 
 Api.PostQuality = function(req, res){
-    throw new Error("Not implemented");    
+    Quality.create(req.body)
+           .then((content) => {
+               console.log(content);
+           })
+           .catch((err) => {
+               console.log(err);
+           });
 }
 
 Api.UpdateQuality = function(req, res){
-    throw new Error("Not implemented");
+    Quality.findByIdAndUpdate(req.params.id)
+           .then((content) => {
+                console.log(content);  
+           })
+           .catch((err) =>{
+                console.log(err); 
+           });
 }
 
 Api.DeleteQuality = function(req, res){
-    throw new Error("Not implemented");
+    Quality.findByIdAndDelete(req.params.id)
+           .then(function(){
+               console.log("[-Deleted Content-]")
+           })
+           .catch((err)=>{
+               console.log(err);
+           })
 }
 
 //~~~~~~~~~~Exportation~~~~~~~~~~~//

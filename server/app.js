@@ -28,9 +28,15 @@ app.set("views" , __dirname + "/../front-end/views");
 
 //---------Routing----------//
 
-let ContentRT = require("./routes/personnalInfoRT.js");
+let PersonnalInfoRT = require("./routes/personnalInfoRT.js"),
+    QualityRT       = require("./routes/qualityRT.js"),
+    WorkRT        = require("./routes/workRT.js"),
+    SkillRT         = require("./routes/skillRT.js");
 
-app.use("/content" , ContentRT);
+app.use("/api/personnalinfo" , PersonnalInfoRT);
+app.use("/api/work" , WorkRT);
+app.use("/api/skill" , SkillRT);
+app.use("/api/quality", QualityRT);
 
 //---------Listener----------//
 

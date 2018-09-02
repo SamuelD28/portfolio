@@ -1,9 +1,21 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './keyskill.module.css';
+import {Ajax} from '../../shared/utility.js';
+import KeySkillCard from '../../components/keyskillCard.js';
 
 class KeySkill extends Component
 {
+    
+    componentDidMount()
+    {
+        let quality = Ajax.GetData()
+    }
+    
+    DisplayKeySkills()
+    {
+    }
+    
     render(){
     return(
     <div id="about-header">

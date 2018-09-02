@@ -47,8 +47,8 @@ let PersonnalInfo = mongoose.model("PersonnalInfo" , personnalInfoSchema);
 
 //--------Core Code-------//
 
-Api.GetContent  = function(req, res){
-    PersonnalInfo.Find()
+Api.GetPersonnalInfo  = function(req, res){
+    PersonnalInfo.find()
            .then((content) =>{
                 res.json(content);
            })
@@ -58,8 +58,8 @@ Api.GetContent  = function(req, res){
            });
 };
 
-Api.PostContent  = function(req, res){
-    PersonnalInfo.Create(req.body)
+Api.PostPersonnalInfo  = function(req, res){
+    PersonnalInfo.create(req.body)
            .then((content) => {
                console.log(content);
            })
@@ -68,8 +68,8 @@ Api.PostContent  = function(req, res){
            });
 }
 
-Api.UpdateContent   = function(req, res){
-    PersonnalInfo.FindByIdAndUpdate(req.params.id)
+Api.UpdatePersonnalInfo   = function(req, res){
+    PersonnalInfo.findByIdAndUpdate(req.params.id)
            .then((content) => {
                 console.log(content);  
            })
@@ -78,8 +78,8 @@ Api.UpdateContent   = function(req, res){
            });
 }
 
-Api.DeleteContent = function(req, res){
-    PersonnalInfo.FindByIdAndDelete(req.params.id)
+Api.DeletePersonnalInfo = function(req, res){
+    PersonnalInfo.findByIdAndDelete(req.params.id)
            .then(function(){
                console.log("[-Deleted Content -]")
            })

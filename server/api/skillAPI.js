@@ -17,7 +17,7 @@ let skillSchema = new Schema({
         type: String
     }
 });
-let Skill = mongoose.Object("Skill" , skillSchema);
+let Skill = mongoose.model("Skill" , skillSchema);
 
 //~~~~~~~~~~Api Methopds~~~~~~~~~~~~//
 

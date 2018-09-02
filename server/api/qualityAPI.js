@@ -21,7 +21,7 @@ let qualitySchema = new Schema({
         trim: true
     }
 });
-let Quality = mongoose.Object("Quality", qualitySchema);
+let Quality = mongoose.model("Quality", qualitySchema);
 
 //~~~~~~~~~~~~Api Methods~~~~~~~~~~~~~//
 

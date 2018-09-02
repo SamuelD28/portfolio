@@ -2,7 +2,7 @@
 
 let express = require("express"),
     router  = express.Router(),
-    Content = require("../api/contentAPI.js");
+    Content = require("../api/personnalInfoAPI.js");
     
 //~~~~~~~~~~Routes~~~~~~~~~~~~~~~//
 

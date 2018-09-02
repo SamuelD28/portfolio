@@ -8,19 +8,27 @@ let mongoose = require("mongoose"),
 let Schema      = mongoose.Schema;
 let workSchema  = new Schema({
     Title: {
-        type: String
+        type: String,
+        required: true
     },
     Images: [{
-        type: String
+        type: String,
+        required: true
     }],
+    Legend: {
+        type: String,
+        maxLength: 100,
+        required: true
+    },
     Description: {
-        type: String
+        type: String,
+        required: true
     },
     KeyFeatures: [{
         type: String
     }]
 });
-let Work = mongoose.Object("Work", workSchema);
+let Work = mongoose.model("Work", workSchema);
 
 //~~~~~~~~~~~~Api Methods~~~~~~~~~//
 

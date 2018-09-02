@@ -9,13 +9,14 @@ let express             = require("express"),
     app                 = express(),
     bodyParser          = require("body-parser"),
     methodOverride      = require("method-override"),
-    mongoose            = require("mongoose");
+    mongoose            = require("mongoose"),
+    dataseed            = require("./dataseed.js");
 
 //---------Initialisation----------//
 
 //Database
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost:27017/samdube", {useNewUrlParser : true});
+mongoose.connect("mongodb://localhost:27017/portfolio", {useNewUrlParser : true});
 app.use(express.static(__dirname + "/../front-end/css"));
 app.use(express.static(__dirname  + "/../front-end/js"));
 app.use(express.static(__dirname  + "/../front-end/media"));
@@ -27,7 +28,7 @@ app.set("views" , __dirname + "/../front-end/views");
 
 //---------Routing----------//
 
-let ContentRT = require("./routes/contentRT.js");
+let ContentRT = require("./routes/personnalInfoRT.js");
 
 app.use("/content" , ContentRT);
 

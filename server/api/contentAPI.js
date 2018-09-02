@@ -1,15 +1,12 @@
 //---------Dependencies---------//
 
-let mongoose = require("mongoose");
-
-//---------Initialisation---------//
-
-let Api = new Object();
+let mongoose = require("mongoose"),
+    Api      = new Object();
 
 //---------Mongoose Schema and Model---------//
 
 let Schema  = mongoose.Schema;
-let contentSchema = new Schema({
+let personnalInfoSchema = new Schema({
     Name: {
         type: String
     },
@@ -45,49 +42,13 @@ let contentSchema = new Schema({
             type: String
         }
     },
-    Qualities:[{
-        Title: {
-            type: String
-        },
-        Image:{
-            type: String
-        },
-        Description:{
-            type: String
-        }
-    }],
-    Skills:[{
-        Title: {
-            type: String
-        },
-        Pourcentage:{
-            type: Number
-        },
-        Category:{
-            type: String
-        }
-    }],
-    Works:[{
-        Title: {
-            type: String
-        },
-        Images: [{
-            type: String
-        }],
-        Description: {
-            type: String
-        },
-        KeyFeatures: [{
-            type: String
-        }]
-    }]
 });
-let Content = mongoose.model("Content" , contentSchema); 
+let PersonnalInfo = mongoose.model("PersonnalInfo" , personnalInfoSchema); 
 
 //--------Core Code-------//
 
 Api.GetContent  = function(req, res){
-    Content.Find()
+    PersonnalInfo.Find()
            .then((content) =>{
                 res.json(content);
            })
@@ -98,7 +59,7 @@ Api.GetContent  = function(req, res){
 };
 
 Api.PostContent  = function(req, res){
-    Content.Create(req.body)
+    PersonnalInfo.Create(req.body)
            .then((content) => {
                console.log(content);
            })
@@ -108,7 +69,7 @@ Api.PostContent  = function(req, res){
 }
 
 Api.UpdateContent   = function(req, res){
-    Content.FindByIdAndUpdate(req.params.id)
+    PersonnalInfo.FindByIdAndUpdate(req.params.id)
            .then((content) => {
                 console.log(content);  
            })
@@ -118,7 +79,7 @@ Api.UpdateContent   = function(req, res){
 }
 
 Api.DeleteContent = function(req, res){
-    Content.FindByIdAndDelete(req.params.id)
+    PersonnalInfo.FindByIdAndDelete(req.params.id)
            .then(function(){
                console.log("[-Deleted Content -]")
            })
@@ -129,4 +90,4 @@ Api.DeleteContent = function(req, res){
 
 //---------Module Exports---------//
 
-module.exports = Api;
+module.exports = {Api: Api, Model: PersonnalInfo};

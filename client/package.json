@@ -7,6 +7,7 @@
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5"
   },
+  "proxy": "http://portfolio-samueld28.c9users.io:8080",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",

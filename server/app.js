@@ -17,14 +17,11 @@ let express             = require("express"),
 //Database
 mongoose.Promise = Promise;
 mongoose.connect("mongodb://localhost:27017/portfolio", {useNewUrlParser : true});
-app.use(express.static(__dirname + "/../front-end/css"));
-app.use(express.static(__dirname  + "/../front-end/js"));
-app.use(express.static(__dirname  + "/../front-end/media"));
+app.use(express.static(__dirname + "/media"));
 app.use(methodOverride("_method"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
-app.set("views" , __dirname + "/../front-end/views");
 
 //---------Routing----------//
 

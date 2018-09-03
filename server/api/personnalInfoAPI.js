@@ -48,7 +48,7 @@ let PersonnalInfo = mongoose.model("PersonnalInfo" , personnalInfoSchema);
 //--------Core Code-------//
 
 Api.GetPersonnalInfo  = function(req, res){
-    PersonnalInfo.find()
+    PersonnalInfo.findOne()
            .then((content) =>{
                 res.json(content);
            })

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './app.module.css';
+import {Ajax} from './shared/utility.js';
 
 // Components Import
 import Navbar from './components/navbar/navbar.js';
@@ -10,8 +11,22 @@ import SectionTitle from './components/sectiontitle/sectiontitle.js';
 import KeySkill from './containers/keyskill/keyskill.js';
 import PersonnalDesc from './containers/personnaldesc/personnaldesc.js';
 import PortfolioProjects from './containers/portfolioprojects/portfolioprojects.js';
+import Skills from './containers/skills/skills.js';
 
 class App extends Component{
+    
+    constructor(props)
+    {
+        super(props);
+        this.state =  "";
+    }
+    
+    async componentDidMount()
+    {
+        let personnalInfo = await Ajax.GetData("/api/personnalinfo");
+        this.setState({personnalInfo});
+        console.log(this.state.personnalInfo);
+    }
     
     render(){
         return(
@@ -39,8 +54,8 @@ class App extends Component{
                 <SectionTitle title="Mais qui est-ce?" menu="À propos"/>
                 <KeySkill />
                 <div id="about-body">
-                    <PersonnalDesc />
-                    <div id="skillset">
+                    <PersonnalDesc personnalInfo={this.state.personnalInfo}/>
+                    <div id="skillset"> 
                         <div id="skillset-header">
                             <span className="active-prog nav-tab">Programmation</span>
                             <span>|</span>
@@ -48,8 +63,7 @@ class App extends Component{
                             <span>|</span>
                             <span className="nav-tab">3d</span>
                         </div>
-                        <div id="skillset-body">
-                        </div>
+                        <Skills />
                     </div>
                 </div>
             </section>

@@ -1,18 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './personnaldesc.module.css';
 
-class PersonnalDesc extends Component
-{
-    render(){
+const PersonnalDesc = (props) =>{
+    if(props.personnalInfo != null)
     return(
     <div id="my-info">
-        <img alt="" className="my-img" src="/img/profil.jpg" />
-        <p className="my-desc">Bien l'bonjour, je m'appel Samuel Dubé. Je suis présentement un DEC en informatique au cégep de Saint-Jean-sur-Richelieu. 
-        Je me passione pour le dévelopement Web ainsi que la création 3d. 
-        Mon fruit favori est la banane.</p>
+        <img alt="" className="my-img" src={`img/${props.personnalInfo.ProfilImage}`} />
+        <p className="my-desc">{props.personnalInfo.Description}</p>
     </div>
     )}
-}
 
 export default CSSModules(PersonnalDesc, styles, {allowMultiple: true});

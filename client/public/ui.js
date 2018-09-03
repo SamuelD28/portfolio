@@ -7,7 +7,7 @@ let UI_banner = document.querySelector("#banner");
 let UI_bannerTitle = document.querySelector("#banner-title");
 let UI_body = document.querySelector("body");
 let UI_about = document.querySelector("#about");
-let UI_skillset = document.querySelector("#skillset-body");
+// let UI_skillset = document.querySelector("#skillset-body");
 let UI_carouselBtn = Array.prototype.slice.call(document.querySelectorAll(".carousel-btn"));
 let UI_carousel = Array.prototype.slice.call(document.querySelectorAll(".carousel"));
 
@@ -141,7 +141,6 @@ function Main()
     AdjustElementsHeight();   
     AdjustInfoPosition();
     AnimateText();
-    LoadSkillBar();
     
     //Ajoute tout les events listeners
     UI_navItem.forEach(function(navItem){navItem.addEventListener("click", ScrollToSection)});
@@ -304,7 +303,6 @@ function OnScroll()
 {
     RotateScrollButton();
     AnimateText();
-    LoadSkillPercentage();
 }
 
 //Fonction qui tourne le bouton de 180 degree en fonction de la position du scoll
@@ -331,33 +329,33 @@ function AnimateText()
     }
 }
 
-//Fonction qui charge la bar de talent dans le document
-function LoadSkillBar()
-{
-    Skills.programming.forEach(function(skill){
-        UI_skillset.innerHTML += `  <div class="skill">
-                                        <span class="skill-name">${skill.name}</span>
-                                        <div class="skill-bar">
-                                            <span class="skill-bar-bg"></span>
-                                        </div>
-                                        <span class="skill-percentage">${skill.percentage}%</span>
-                                    </div>`;
-    });
-}
+// //Fonction qui charge la bar de talent dans le document
+// function LoadSkillBar()
+// {
+//     Skills.programming.forEach(function(skill){
+//         UI_skillset.innerHTML += `  <div class="skill">
+//                                         <span class="skill-name">${skill.name}</span>
+//                                         <div class="skill-bar">
+//                                             <span class="skill-bar-bg"></span>
+//                                         </div>
+//                                         <span class="skill-percentage">${skill.percentage}%</span>
+//                                     </div>`;
+//     });
+// }
 
 //Fonction qui charge le pourcentage de chaque bar de talent
-function LoadSkillPercentage()
-{
-    let skills = Array.prototype.slice.call(UI_skillset.children);
+// function LoadSkillPercentage()
+// {
+//     let skills = Array.prototype.slice.call(UI_skillset.children);
     
-    if((UI_skillset.getBoundingClientRect().bottom > 0) && 
-       (UI_skillset.getBoundingClientRect().bottom < window.innerHeight))
-    {
-    skills.forEach(function(skill){
-        skill.children[1].children[0].style.paddingLeft = skill.children[2].textContent;
-    });
-    }
-}
+//     if((UI_skillset.getBoundingClientRect().bottom > 0) && 
+//       (UI_skillset.getBoundingClientRect().bottom < window.innerHeight))
+//     {
+//     skills.forEach(function(skill){
+//         skill.children[1].children[0].style.paddingLeft = skill.children[2].textContent;
+//     });
+//     }
+// }
 
 //Fonction qui change le contenu de la section talent
 function DisplaySkill(e)

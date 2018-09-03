@@ -9,14 +9,14 @@ class PortfolioProjects extends Component
     <div className="portfolio-content">
         <div id="portfolio-web" className="portfolio-body">
             <div className="portfolio-item-md over-grey">
-                <span className="portfolio-bg"  style={{backgroundImage: `url('/img/portfolio/web/lapresse/lapresse.jpg')`}}></span>
+                <span className="portfolio-bg"  style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/web/lapresse/lapresse.jpg')`}}></span>
                 <span className="portfolio-title">La <br /> Presse</span>
                 <span className="portfolio-btn"><a href="http://www.lapresse.ca/">Voir Projet <i className="icon external alternate"></i></a></span>
                 <span className="portfolio-bar"></span>
                 <span className="portfolio-legend">Copie de la page d'accueil du site web de la presse réalisé dans le cadre d'un cour.</span>
             </div>
             <div className="portfolio-item-md over-red">
-                <span className="portfolio-bg"  style={{backgroundImage: `url('/img/portfolio/web/creativa/home.jpg')`}}></span>
+                <span className="portfolio-bg"  style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/web/creativa/home.jpg')`}}></span>
                 <span className="portfolio-title">Créativa<br /> Studio</span>
                 <span className="portfolio-btn">Voir Projet</span>
                 <span className="portfolio-bar"></span>
@@ -25,10 +25,10 @@ class PortfolioProjects extends Component
                     <div className="project-container">
                         <div className="carousel-container">
                             <span className="carousel">
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/creativa/home.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/creativa/portfolio.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/creativa/service.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/creativa/contact.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/creativa/home.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/creativa/portfolio.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/creativa/service.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/creativa/contact.jpg" />
                             </span>
                             <div className="carousel-btn left-btn"><i className="icon left chevron"></i></div>
                             <div className="carousel-btn right-btn"><i className="icon right chevron"></i></div>
@@ -48,7 +48,7 @@ class PortfolioProjects extends Component
                 </div>
             </div>
             <div className="portfolio-item-md portfolio-large over-blue " >
-                <span className="portfolio-bg"  style={{backgroundImage: `url('/img/portfolio/web/fromscratch/home.jpg')`}}></span>
+                <span className="portfolio-bg"  style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/web/fromscratch/home.jpg')`}}></span>
                 <span className="portfolio-title">From<br /> Scratch</span>
                 <span className="portfolio-btn">Voir Projet</span>
                 <span className="portfolio-bar"></span>
@@ -57,11 +57,11 @@ class PortfolioProjects extends Component
                     <div className="project-container">
                         <div className="carousel-container">
                             <span className="carousel">
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/fromscratch/home.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/fromscratch/shop.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/fromscratch/portfolio.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/fromscratch/learning.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/fromscratch/shop-cart.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/fromscratch/home.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/fromscratch/shop.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/fromscratch/portfolio.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/fromscratch/learning.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/fromscratch/shop-cart.jpg" />
                             </span>
                             <div className="carousel-btn left-btn"><i className="icon left chevron"></i></div>
                             <div className="carousel-btn right-btn"><i className="icon right chevron"></i></div>
@@ -86,7 +86,7 @@ class PortfolioProjects extends Component
             </div>
                 
             <div className="portfolio-item-md over-grey">
-                <span className="portfolio-bg"  style={{backgroundImage: `url('/img/portfolio/web/student/banner1.jpg')`}}></span>
+                <span className="portfolio-bg"  style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/web/student/banner1.jpg')`}}></span>
                 <span className="portfolio-title">Student<br /> Application</span>
                 <span className="portfolio-btn">Voir Projet</span>
                 <span className="portfolio-bar"></span>
@@ -95,8 +95,8 @@ class PortfolioProjects extends Component
                     <div className="project-container">
                         <div className="carousel-container">
                             <span className="carousel">
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/student/banner1.jpg" />
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/student/banner2.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/student/banner1.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/student/banner2.jpg" />
                             </span>
                             <div className="carousel-btn left-btn"><i className="icon left chevron"></i></div>
                             <div className="carousel-btn right-btn"><i className="icon right chevron"></i></div>
@@ -118,7 +118,7 @@ class PortfolioProjects extends Component
                 </div>
             </div>
             <div className="portfolio-item-md over-blue">
-                <span className="portfolio-bg"  style={{backgroundImage: `url('/img/portfolio/web/cookingblog/home.jpg')`}}></span>
+                <span className="portfolio-bg"  style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/web/cookingblog/home.jpg')`}}></span>
                 <span className="portfolio-title">Cooking<br /> Blog</span>
                 <span className="portfolio-btn">Voir Projet</span>
                 <span className="portfolio-bar"></span>
@@ -127,7 +127,7 @@ class PortfolioProjects extends Component
                     <div className="project-container">
                         <div className="carousel-container">
                             <span className="carousel">
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/cookingblog/home.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/cookingblog/home.jpg" />
                             </span>
                         </div>
                         <div className="project-info">
@@ -146,7 +146,7 @@ class PortfolioProjects extends Component
                 </div>
             </div>
             <div className="portfolio-item-md portfolio-large over-green">
-                <span className="portfolio-bg"  style={{backgroundImage: `url('/img/portfolio/web/yelpcamp/home.jpg')`}}></span>
+                <span className="portfolio-bg"  style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/web/yelpcamp/home.jpg')`}}></span>
                 <span className="portfolio-title">Yelp<br /> Camp</span>
                 <span className="portfolio-btn">Voir Projet</span>
                 <span className="portfolio-bar"></span>
@@ -155,7 +155,7 @@ class PortfolioProjects extends Component
                     <div className="project-container">
                         <div className="carousel-container">
                             <span className="carousel">
-                                <img alt="" className="carousel-img" src="/img/portfolio/web/yelpcamp/home.jpg" />
+                                <img alt="" className="carousel-img" src="https://portfolio-samueld28.c9users.io/portfolio/web/yelpcamp/home.jpg" />
                             </span>
                         </div>
                         <div className="project-info">
@@ -177,42 +177,42 @@ class PortfolioProjects extends Component
     </div>
         <div id="portfolio-art" className="portfolio-body">
             <div className="portfolio-item-md over-grey">
-                <span className="portfolio-bg" style={{backgroundImage: `url('/img/portfolio/3d/port-pool-deck.jpg')`}}></span>
+                <span className="portfolio-bg" style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/3d/port-pool-deck.jpg')`}}></span>
                 <span className="portfolio-title">Maison Rustique</span>
                 <span className="portfolio-btn"><a href="http://samueld28.cgsociety.org/art/blender-photshop-rustic-house-17667922">Voir Projet <i className="icon external alternate"></i></a></span>
                 <span className="portfolio-bar"></span>
                 <span className="portfolio-legend">Maison de style rustique situé en région éloignée. Réalisé avec Blender & Cycles</span>
             </div>
             <div className="portfolio-item-md over-green">
-                <span className="portfolio-bg" style={{backgroundImage: `url('/img/portfolio/3d/asian-bed.jpg')`}}></span>
+                <span className="portfolio-bg" style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/3d/asian-bed.jpg')`}}></span>
                 <span className="portfolio-title">Lit Asiatique</span>
                 <span className="portfolio-btn"><a href="https://www.cgtrader.com/3d-models/furniture/bed/asian-bedroom-sets">Voir Projet <i className="icon external alternate"></i></a></span>
                 <span className="portfolio-bar"></span>
                 <span className="portfolio-legend">Lit asiatique réalisé avec 3ds Max & Corona. En vente sur ma boutique.</span>
             </div>
             <div className="portfolio-item-md portfolio-large over-red">
-                <span className="portfolio-bg" style={{backgroundImage: `url('/img/portfolio/3d/mech-render.png')`}}></span>
+                <span className="portfolio-bg" style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/3d/mech-render.png')`}}></span>
                 <span className="portfolio-title">Robot de Combat</span>
                 <span className="portfolio-btn"><a href="https://www.cgtrader.com/free-3d-models/character/sci-fi/combat-mech-b-51">Voir Projet <i className="icon external alternate"></i></a></span>
                 <span className="portfolio-bar"></span>
                 <span className="portfolio-legend">Robot de combat réalisé avec 3ds & Substance & Marmoset. Disponible gratuitement sur ma boutique.</span>
             </div>
             <div className="portfolio-item-md over-grey">
-                <span className="portfolio-bg" style={{backgroundImage: `url('/img/portfolio/3d/fridge-samsung.jpg')`}}></span>
+                <span className="portfolio-bg" style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/3d/fridge-samsung.jpg')`}}></span>
                 <span className="portfolio-title">Réfrégirateur Samsung</span>
                 <span className="portfolio-btn"><a href="https://www.cgtrader.com/3d-models/furniture/appliance/samsung-fridge-b31da446-37e5-4894-a253-906ab1b9168f">Voir Projet <i className="icon external alternate"></i></a></span>
                 <span className="portfolio-bar"></span>
                 <span className="portfolio-legend">Réfrégirateur samsung avec intérieur complet. En vente sur ma boutique.</span>
             </div>
             <div className="portfolio-item-md  over-blue">
-                <span className="portfolio-bg" style={{backgroundImage: `url('/img/portfolio/3d/port-bedroom.jpg')`}}></span>
+                <span className="portfolio-bg" style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/3d/port-bedroom.jpg')`}}></span>
                 <span className="portfolio-title">Chambre Moderne</span>
                 <span className="portfolio-btn"><a href="http://samueld28.cgsociety.org/art/3dsmax-corona-renderer-krita-modern-bedroom-1743752">Voir Projet <i className="icon external alternate"></i></a></span>
                 <span className="portfolio-bar"></span>
                 <span className="portfolio-legend">Chambre de style moderne situé dans un immeuble à condos. Réalisé avec 3ds max & Corona.</span>
             </div>
             <div className="portfolio-item-md portfolio-large over-green">
-                <span className="portfolio-bg" style={{backgroundImage: `url('/img/portfolio/3d/port-house-modern.jpg')`}}></span>
+                <span className="portfolio-bg" style={{backgroundImage: `url('https://portfolio-samueld28.c9users.io/portfolio/3d/port-house-modern.jpg')`}}></span>
                 <span className="portfolio-title">Maison Moderne</span>
                 <span className="portfolio-btn"><a href="http://samueld28.cgsociety.org/art/blender-photoshop-modern-house-in-17667919">Voir Projet <i className="icon external alternate"></i></a></span>
                 <span className="portfolio-bar"></span>

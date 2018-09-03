@@ -55,16 +55,7 @@ class App extends Component{
                 <KeySkill />
                 <div id="about-body">
                     <PersonnalDesc personnalInfo={this.state.personnalInfo}/>
-                    <div id="skillset"> 
-                        <div id="skillset-header">
-                            <span className="active-prog nav-tab">Programmation</span>
-                            <span>|</span>
-                            <span className="nav-tab">Framework</span>
-                            <span>|</span>
-                            <span className="nav-tab">3d</span>
-                        </div>
-                        <Skills />
-                    </div>
+                    <Skills />
                 </div>
             </section>
             <section id="portfolio">

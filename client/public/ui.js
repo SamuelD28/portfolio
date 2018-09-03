@@ -329,33 +329,33 @@ function AnimateText()
     }
 }
 
-// //Fonction qui charge la bar de talent dans le document
-// function LoadSkillBar()
-// {
-//     Skills.programming.forEach(function(skill){
-//         UI_skillset.innerHTML += `  <div class="skill">
-//                                         <span class="skill-name">${skill.name}</span>
-//                                         <div class="skill-bar">
-//                                             <span class="skill-bar-bg"></span>
-//                                         </div>
-//                                         <span class="skill-percentage">${skill.percentage}%</span>
-//                                     </div>`;
-//     });
-// }
+//Fonction qui charge la bar de talent dans le document
+function LoadSkillBar()
+{
+    Skills.programming.forEach(function(skill){
+        UI_skillset.innerHTML += `  <div class="skill">
+                                        <span class="skill-name">${skill.name}</span>
+                                        <div class="skill-bar">
+                                            <span class="skill-bar-bg"></span>
+                                        </div>
+                                        <span class="skill-percentage">${skill.percentage}%</span>
+                                    </div>`;
+    });
+}
 
-//Fonction qui charge le pourcentage de chaque bar de talent
-// function LoadSkillPercentage()
-// {
-//     let skills = Array.prototype.slice.call(UI_skillset.children);
+// Fonction qui charge le pourcentage de chaque bar de talent
+function LoadSkillPercentage()
+{
+    let skills = Array.prototype.slice.call(UI_skillset.children);
     
-//     if((UI_skillset.getBoundingClientRect().bottom > 0) && 
-//       (UI_skillset.getBoundingClientRect().bottom < window.innerHeight))
-//     {
-//     skills.forEach(function(skill){
-//         skill.children[1].children[0].style.paddingLeft = skill.children[2].textContent;
-//     });
-//     }
-// }
+    if((UI_skillset.getBoundingClientRect().bottom > 0) && 
+      (UI_skillset.getBoundingClientRect().bottom < window.innerHeight))
+    {
+    skills.forEach(function(skill){
+        skill.children[1].children[0].style.paddingLeft = skill.children[2].textContent;
+    });
+    }
+}
 
 //Fonction qui change le contenu de la section talent
 function DisplaySkill(e)

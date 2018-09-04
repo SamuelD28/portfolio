@@ -1,7 +1,7 @@
 //~~~~~~~~~~~~Dependency Declaration~~~~~~~~~//
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import styles from './portfolioprojectCard.module.css';
+import styles from './portfolioCard.module.css';
 
 
 const DisplayImages = (images) => {

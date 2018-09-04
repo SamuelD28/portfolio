@@ -16,12 +16,12 @@ const SkillCard = (props) => {
     if(props.skills != null)
     {
     return(
-    <div className="skill">
-        <span className="skill-name" style={{background: backgroundColor1}}>{props.skills.Title}</span>
-        <div className="skill-bar">
-            <span className="skill-bar-bg" style={{paddingLeft: `${props.skills.Pourcentage}%`, background: backgroundColor2}}></span>
+    <div styleName="skill">
+        <span styleName="skill-name" style={{background: backgroundColor1}}>{props.skills.Title}</span>
+        <div styleName="skill-bar">
+            <span styleName="skill-bar-bg" style={{paddingLeft: `${props.skills.Pourcentage}%`, background: backgroundColor2}}></span>
         </div>
-        <span className="skill-percentage">{props.skills.Pourcentage}%</span>
+        <span styleName="skill-percentage">{props.skills.Pourcentage}%</span>
     </div>
     )}
 }

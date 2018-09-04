@@ -5,9 +5,9 @@ import styles from './personnaldesc.module.css';
 const PersonnalDesc = (props) =>{
     if(props.personnalInfo != null)
     return(
-    <div id="my-info">
-        <img alt="" className="my-img" src={`img/${props.personnalInfo.ProfilImage}`} />
-        <p className="my-desc">{props.personnalInfo.Description}</p>
+    <div styleName="my-info">
+        <img alt="" styleName="my-img" src={`img/${props.personnalInfo.ProfilImage}`} />
+        <p styleName="my-desc">{props.personnalInfo.Description}</p>
     </div>
     )}
 

@@ -1,0 +1,36 @@
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 2% auto;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 1%; }
+  
+.title-info {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  transform-origin: 0% 0%;
+  transform: translateX(-110%); }
+
+.title-border {
+  background: #a3a3a3;
+  position: absolute;
+  left: 0;
+  width: 0.1vw;
+  height: 0%;
+  transform-origin: 50% 50%;
+  transition: all 1s ease; }
+
+.title {
+  margin-bottom: 1%;
+  text-transform: uppercase;
+  color: #57777f;
+  font-weight: bold;
+  font-family: Source Sans Pro,sans-serif; }
+
+.legend {
+  color: #939393;
+  font-size: 2.5vw;
+  font-family: Yanone Kaffeesatz, sans-serif; }

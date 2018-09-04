@@ -8,7 +8,7 @@ import ContactForm from '../../components/contactForm/contactForm.js';
 const Contact = (props) => {
     
     return(
-    <div className="contact-container">
+    <div styleName="contact-container">
         <ContactInfo />
         <ContactForm />
     </div>

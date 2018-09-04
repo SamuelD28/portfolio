@@ -1,0 +1,12 @@
+.my-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40%; }
+
+.my-img {
+  width: 60%; }
+
+.my-desc {
+  color: #848484; }

@@ -1,4 +1,6 @@
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './keyskillCard.module.css';
 
 const KeySkillCard = (props) => {
     return(
@@ -10,4 +12,4 @@ const KeySkillCard = (props) => {
     )
 }
 
-export default KeySkillCard;
+export default CSSModules(KeySkillCard, styles, {allowMultiple: true});

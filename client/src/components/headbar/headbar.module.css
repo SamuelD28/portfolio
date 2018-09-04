@@ -1,0 +1,18 @@
+.nav-top {
+  display: flex;
+  font-family: Yanone Kaffeesatz, sans-serif;
+  justify-content: space-between;
+  width: 100%; }
+  
+.nav-btn {
+  color: #a3a3a3;
+  font-size: 2vw;
+  z-index: 1000; }
+
+.nav-btn:hover {
+  cursor: pointer; }
+  
+.language {
+  color: #939393;
+  font-size: 1.25vw;
+  font-weight: bold; }

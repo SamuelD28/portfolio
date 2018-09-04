@@ -30,7 +30,7 @@ class KeySkill extends Component
     
     render(){
     return(
-    <div id="about-header">
+    <div styleName="about-header">
         {this.DisplayKeySkills()}
     </div>
     )}

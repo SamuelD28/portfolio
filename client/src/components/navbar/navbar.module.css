@@ -46,12 +46,6 @@
   color: #abbbbf;
   cursor: pointer; }
 
-.nav-tab {
-  transition-delay: 1s; }
-
-.nav-tab:hover {
-  cursor: pointer; }
-
 .nav-social {
   color: white;
   font-size: 5vw;

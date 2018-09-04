@@ -31,15 +31,8 @@ class Portfolio extends Component
     render(){
     return(
     <div>
-        <div id="portfolio-header">
-            <div id="skillset-header">
-                <span data-content="portfolio-web" className="active-prog cat-tab">Programmation</span>
-                <span>|</span>
-                <span data-content="portfolio-art" className="cat-tab">3d</span>
-            </div>
-        </div>
-        <div className="portfolio-content">
-            <div id="portfolio-web" className="portfolio-body">
+        <div styleName="portfolio-content">
+            <div id="portfolio-web" styleName="portfolio-body">
                 {this.DisplayWorks()}
             </div>
         </div>

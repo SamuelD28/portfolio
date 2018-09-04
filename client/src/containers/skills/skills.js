@@ -44,13 +44,13 @@ class Skills extends Component{
     if(this.state.skills != null)
     {
     return(
-    <div id="skillset"> 
-        <div id="skillset-header">
-            <span onClick={this.ChangeActiveSkills} skills="programming" className="active-prog nav-tab">Programmation</span>
+    <div styleName="skillset"> 
+        <div styleName="skillset-header">
+            <span onClick={this.ChangeActiveSkills} skills="programming" styleName="nav-tab">Programmation</span>
             <span>|</span>
-            <span onClick={this.ChangeActiveSkills} skills="framework" className="nav-tab">Framework</span>
+            <span onClick={this.ChangeActiveSkills} skills="framework" styleName="nav-tab">Framework</span>
             <span>|</span>
-            <span onClick={this.ChangeActiveSkills} skills="modeling" className="nav-tab">3d</span>
+            <span onClick={this.ChangeActiveSkills} skills="modeling" styleName="nav-tab">3d</span>
         </div>
         <div id="skillset-body">
             {this.DisplaySkills()}

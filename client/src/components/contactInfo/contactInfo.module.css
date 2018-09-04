@@ -1,0 +1,16 @@
+.contact-left {
+  background: #738d94;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 0 1vw; }
+
+.contact-info {
+  color: white;
+  display: flex;
+  margin: 1.5vw 0; }
+
+.contact-icon {
+  margin: 0 1vw; }

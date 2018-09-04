@@ -5,25 +5,25 @@ import styles from './contactInfo.module.css';
 
 const ContactInfo = (props) => {
     return(
-    <div className="contact-left">
-        <div className="contact-info">
-            <span className="contact-icon"><i className="icon map marker alternate"></i></span>
+    <div styleName="contact-left">
+        <div styleName="contact-info">
+            <span styleName="contact-icon"><i className="icon map marker alternate"></i></span>
             <div>
                 <span><b>Adresse</b><br/>
                 <hr />
                 Sainte-Catherine,<br /> QC J5C 1J8,<br /> Canada</span>
             </div>
         </div>
-        <div className="contact-info">
-            <span className="contact-icon"><i className="icon phone"></i></span>
+        <div styleName="contact-info">
+            <span styleName="contact-icon"><i className="icon phone"></i></span>
             <div>
                 <span> <b>Téléphone </b><br/>
                 <hr />
                 514-688-6447</span>
             </div>
         </div>
-        <div className="contact-info">
-            <span className="contact-icon"><i className="icon mail"></i></span>
+        <div styleName="contact-info">
+            <span styleName="contact-icon"><i className="icon mail"></i></span>
             <div>
                 <span> <b>Question ?</b><br/>
                 <hr />

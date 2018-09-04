@@ -1,0 +1,16 @@
+.skillset {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  overflow: hidden; }
+
+.skillset-header {
+  color: #b2b2b2;
+  font-size: 1.5vw;
+  font-weight: bold; }
+  
+.nav-tab {
+  transition-delay: 1s; }
+
+.nav-tab:hover {
+  cursor: pointer; }

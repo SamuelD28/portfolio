@@ -25,7 +25,6 @@ class App extends Component{
     {
         let personnalInfo = await Ajax.GetData("/api/personnalinfo");
         this.setState({personnalInfo});
-        console.log(this.state.personnalInfo);
     }
     
     render(){

@@ -1,8 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './bannerTitle.module.css';
+import {Utility} from '../../shared/utility.js';
 
-const BannerTitle = () => {
+class BannerTitle extends Component{
+    
+    componentDidMount()
+    {
+        let banner = document.getElementById("banner-title");
+        Utility.AdjustFullHeight(banner);
+    }
+    
+    render(){
     return(
     <div id="banner-title" styleName="title-wrapper">
         <span styleName="title-border"></span>
@@ -11,6 +20,7 @@ const BannerTitle = () => {
             <span styleName="legend">Développeur Full Stack</span>
         </span>
     </div>
-)}
+    )}
+}
 
 export default CSSModules(BannerTitle, styles, {allowMultiple: true});

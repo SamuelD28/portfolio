@@ -7,7 +7,7 @@ import Skills from '../skills/skills.js';
 
 const About = (props) => {
     return(
-    <div id="about-body">
+    <div styleName="about-body">
         <PersonnalDesc personnalInfo={props.personnalInfo}/>
         <Skills />
     </div>

@@ -6,9 +6,10 @@
   flex-direction: column;
   font-family: Yanone Kaffeesatz, sans-serif;
   font-size: 2.15vw;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: center;
-  transform: translateX(-100%);
   transform-origin: 0% 0%;
   transition: all .6s ease;
   width: 100%;

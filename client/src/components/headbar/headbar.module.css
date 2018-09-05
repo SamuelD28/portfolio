@@ -1,13 +1,12 @@
 .headbar {
   align-items: center;
   box-sizing: border-box;
-  background-color: whitesmoke;
   display: flex;
   font-family: Yanone Kaffeesatz, sans-serif;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
   position: fixed;
-  padding: 1.5vw 0;
+  padding: 1.5vw;
   top: 0;
   z-index: 1000; 
 }

@@ -2,19 +2,31 @@
   animation: ArrowMovement 1250ms infinite;
   animation-timing-function: ease;
   border-radius: 50%;
+  border: 2px solid #3b6069;
   color: #3b6069;
+  height: 1em;
   font-size: 1.5vw;
   padding: .5%;
   text-align: center;
   transition: background .3s ease;
   position: fixed;
   bottom: 5%;
-  z-index: 100; }
+  right: 5%;
+  width: 1em;
+  z-index: 100; 
+}
 
 .goDown-btn:hover {
   background: #3b6069;
   color: white;
-  cursor: pointer; }
+  cursor: pointer; 
+}
+
+.goDownIcon{
+  width: 100% !important;
+  height: 100% !important;
+  transition: all .3s ease;
+}
   
 /*~~~~~~~~~Keyframe Animation~~~~~~~~~~~~*/
 @keyframes ArrowMovement {

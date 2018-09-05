@@ -1,4 +1,4 @@
-.title-wrapper {
+.titleWrapper {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -7,14 +7,14 @@
   white-space: nowrap;
   padding: 0 1%; }
   
-.title-info {
+.titleInfo {
   display: flex;
   flex-direction: column;
   transition: all 1s ease;
   transform-origin: 0% 0%;
   transform: translateX(-110%); }
 
-.title-border {
+.titleBorder {
   background: #a3a3a3;
   position: absolute;
   left: 0;
@@ -23,7 +23,7 @@
   transform-origin: 50% 50%;
   transition: all 1s ease; }
 
-.title {
+.title{
   margin-bottom: 1%;
   text-transform: uppercase;
   color: #57777f;

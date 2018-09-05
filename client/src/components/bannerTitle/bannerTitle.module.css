@@ -1,18 +1,19 @@
 .title-wrapper {
   display: flex;
   flex-direction: column;
-  position: relative;
   margin: 2% auto;
+  justify-content: center;
   overflow: hidden;
   white-space: nowrap;
-  padding: 0 1%; }
+  padding: 0 1%; 
+}
   
 .title-info {
   display: flex;
   flex-direction: column;
   transition: all 1s ease;
   transform-origin: 0% 0%;
-  transform: translateX(-110%); }
+}
 
 .title-border {
   background: #a3a3a3;

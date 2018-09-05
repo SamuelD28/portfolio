@@ -32,30 +32,7 @@ class App extends Component{
     
     render(){
     return(
-    <div>
-        <span styleName="background-overlay"></span>
-        <Navbar />
-        <div styleName="main">
-            <section styleName="banner"> 
-                <Headbar />
-                <BannerTitle />
-                <DownBtn />
-            </section>
-            <section styleName="about">
-                <SectionTitle title="Mais qui est-ce?" menu="À propos"/>
-                <KeySkill />
-                <About personnalInfo={this.state.personnalInfo} />
-            </section>
-            <section styleName="portfolio">
-                <SectionTitle title="Mais que fait-il?" menu="Travaux"/>
-                <Portfolio />
-            </section>
-            <section styleName="contact">
-                <SectionTitle title="Mais comment le joindre?" menu="Contact"/>
-                <Contact personnalInfo={this.state.personnalInfo}/>
-            </section>
-        </div>
-    </div>
+     
     )}
 }
 

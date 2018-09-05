@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './navbar.module.css';
+import {Utility} from '../../shared/utility.js';
 
 class Navbar extends Component
 {
+    componentDidMount()
+    {
+        let navbar = document.getElementById("navbar");
+        Utility.AdjustFullHeight(navbar);
+    }
+    
     render(){
     return(
-    <div id="nav-container" styleName="nav-container">
+    <div id="navbar" styleName="nav-container">
         <div styleName="nav">
             <div styleName="nav-logo">
                 <img alt="" className="img-fluid" src="/img/personnalLogoWhite.png" />

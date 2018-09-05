@@ -11,6 +11,11 @@ class BannerTitle extends Component{
         Utility.AdjustFullHeight(banner);
     }
     
+    CenterInsideBanner = (banner) =>
+    {
+    }
+    
+    
     render(){
     return(
     <div id="banner-title" styleName="title-wrapper">

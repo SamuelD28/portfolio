@@ -1,5 +1,7 @@
 .main {
-  margin: 0 15vw; }
+  width: 70%;
+  margin: 0 auto;
+}
 
 /*~~~~~~~~~~~~~~Utilities~~~~~~~~~~~~~*/
 .background-overlay {

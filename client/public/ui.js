@@ -4,7 +4,6 @@
 
 //Déclaration concernant tout les élements de l'interface
 let UI_banner = document.querySelector("#banner");
-let UI_bannerTitle = document.querySelector("#banner-title");
 let UI_body = document.querySelector("body");
 let UI_about = document.querySelector("#about");
 // let UI_skillset = document.querySelector("#skillset-body");
@@ -24,9 +23,7 @@ let ANIM_bar = Array.prototype.slice.call(document.querySelectorAll(".title-bord
 //Navigation Component
 let UI_navTab = Array.prototype.slice.call(document.querySelectorAll(".nav-tab"));
 let UI_navTop = document.querySelector("#nav-top");
-let UI_nav = document.querySelector("#nav-container");
 let UI_navbtn = document.querySelector("#nav-btn");
-let UI_goDownBtn = document.querySelector("#goDown-btn");
 let UI_navItem = Array.prototype.slice.call(document.querySelectorAll(".nav-item"));
 let UI_section = Array.prototype.slice.call(document.querySelectorAll("section"));
 
@@ -39,14 +36,10 @@ Main();
 //Fonction Principal
 function Main()
 {
-    AdjustElementsHeight();   
-    AdjustInfoPosition();
     AnimateText();
     
     //Ajoute tout les events listeners
     UI_navItem.forEach(function(navItem){navItem.addEventListener("click", ScrollToSection)});
-    UI_navbtn.addEventListener("click" , DisplayMenu);
-    UI_goDownBtn.addEventListener("click" , SlideTo)
     UI_navTab.forEach(function(tab){tab.addEventListener("click" , DisplaySkill)});
     UI_portfolioBtn.forEach(function(btn){btn.addEventListener("click", DisplayPortfolio);});
     UI_projectDetail.forEach(function(portfolio){portfolio.addEventListener("click" , ClosePortfolio);});
@@ -83,30 +76,9 @@ function ChangePortfolioContent(e)
 //Fonction pour naviguer du menu à la sectino désirée
 function ScrollToSection(e)
 {
-    DisplayMenu();
     UI_section.find(function(section){
         return section.id == e.target.getAttribute("data-scroll");
     }).scrollIntoView({block : "start" , behavior: "smooth"});
-}
-
-//Fonction qui s'occupe de l'interaction avec le menu
-function DisplayMenu()
-{
-    if(UI_navbtn.children[0].classList.contains("bars"))
-    {
-        UI_nav.style.transform = "translateX(0%)";
-        UI_navbtn.children[0].classList.remove("bars");
-        UI_navbtn.children[0].classList.add("close");
-        window.scrollTo(0 , 0);
-        UI_body.classList.add("stop-scrolling");
-    }
-    else 
-    {
-        UI_nav.style.transform = "translateX(-100%)";
-        UI_navbtn.children[0].classList.add("bars");
-        UI_navbtn.children[0].classList.remove("close");
-        UI_body.classList.remove("stop-scrolling");
-    }
 }
 
 //Fonction qui s'occupe d'afficher le carousel et de faire défiler celui-ci 
@@ -186,33 +158,10 @@ function SlideTo()
         UI_banner.scrollIntoView({block : "start", behavior : "smooth"});
 }
 
-//Fonction qui permet d'ajuster la hauteur pour remplir l'écran
-function AdjustElementsHeight()
-{
-    UI_banner.style.height = window.innerHeight + "px";
-    UI_nav.style.height = window.innerHeight + "px";
-}
-
-//Fonction qui permet de center un élément parfaitement dans l'écran
-function AdjustInfoPosition()
-{
-    UI_bannerTitle.style.top = window.innerHeight / 2 - UI_bannerTitle.clientHeight - UI_navTop.clientHeight + "px";
-}
-
 //Fonction qui est appeller à chaque le document est scroll
 function OnScroll()
 {
-    RotateScrollButton();
     AnimateText();
-}
-
-//Fonction qui tourne le bouton de 180 degree en fonction de la position du scoll
-function RotateScrollButton()
-{
-    if(window.scrollY === 0)
-        UI_goDownBtn.children[0].style.transform = "rotate(0deg)";
-    else
-        UI_goDownBtn.children[0].style.transform = "rotate(180deg)";
 }
 
 //Fonction qui anime le titre de différentes sections

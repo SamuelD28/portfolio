@@ -10,7 +10,9 @@ body {
   margin: 0; }
 
 .icon {
-  margin: 0 !important; }
+  margin: 0 !important; 
+  pointer-events: none;
+}
 
 ul {
   margin: 0; }

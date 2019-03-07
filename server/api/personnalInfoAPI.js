@@ -1,93 +1,94 @@
-//---------Dependencies---------//
+// ---------Dependencies---------//
 
-let mongoose = require("mongoose"),
-    Api      = new Object();
+const mongoose = require('mongoose');
+const Api = {};
 
-//---------Mongoose Schema and Model---------//
+// ---------Mongoose Schema and Model---------//
 
-let Schema  = mongoose.Schema;
-let personnalInfoSchema = new Schema({
-    Name: {
-        type: String
+const Schema = mongoose.Schema;
+const personnalInfoSchema = new Schema({
+  Name: {
+    type: String,
+  },
+  Age: {
+    type: Number,
+  },
+  Phone: {
+    type: Number,
+  },
+  Email: {
+    type: String,
+  },
+  ProfilImage: {
+    type: String,
+  },
+  Description: {
+    type: String,
+  },
+  Occupation: {
+    type: String,
+  },
+  Adress: {
+    City: {
+      type: String,
     },
-    Age: {
-        type: Number
+    Province: {
+      type: String,
     },
-    Phone: {
-        type: Number
+    PostalCode: {
+      type: String,
     },
-    Email:{
-        type: String
+    Country: {
+      type: String,
     },
-    ProfilImage:{
-        type: String
-    },
-    Description:{
-        type: String
-    },
-    Occupation: {
-        type: String
-    },
-    Adress: {
-        City:{
-            type: String
-        },
-        Province:{
-            type: String
-        },
-        PostalCode: {
-            type: String
-        },
-        Country: {
-            type: String
-        }
-    },
+  },
 });
-let PersonnalInfo = mongoose.model("PersonnalInfo" , personnalInfoSchema); 
+const PersonnalInfo = mongoose.model('PersonnalInfo', personnalInfoSchema);
 
-//--------Core Code-------//
+// --------Core Code-------//
 
-Api.GetPersonnalInfo  = function(req, res){
-    PersonnalInfo.findOne()
-           .then((content) =>{
-                res.json(content);
-           })
-           .catch((err) => {
-                if(err)
-                    console.log(err);
-           });
+Api.GetPersonnalInfo = function(req, res) {
+  PersonnalInfo.findOne()
+      .then((content) => {
+        res.json(content);
+      })
+      .catch((err) => {
+        if (err) {
+          console.log(err);
+        }
+      });
 };
 
-Api.PostPersonnalInfo  = function(req, res){
-    PersonnalInfo.create(req.body)
-           .then((content) => {
-               console.log(content);
-           })
-           .catch((err) => {
-               console.log(err);
-           });
-}
+Api.PostPersonnalInfo = function(req, res) {
+  PersonnalInfo.create(req.body)
+      .then((content) => {
+        console.log(content);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+};
 
-Api.UpdatePersonnalInfo   = function(req, res){
-    PersonnalInfo.findByIdAndUpdate(req.params.id)
-           .then((content) => {
-                console.log(content);  
-           })
-           .catch((err) =>{
-                console.log(err); 
-           });
-}
+Api.UpdatePersonnalInfo = function(req, res) {
+  PersonnalInfo.findByIdAndUpdate(req.params.id)
+      .then((content) => {
+        console.log(content);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+};
 
-Api.DeletePersonnalInfo = function(req, res){
-    PersonnalInfo.findByIdAndDelete(req.params.id)
-           .then(function(){
-               console.log("[-Deleted Content -]")
-           })
-           .catch((err)=>{
-               console.log(err);
-           })
-}
+Api.DeletePersonnalInfo = function(req, res) {
+  PersonnalInfo.findByIdAndDelete(req.params.id)
+      .then(function() {
+        console.log('[-Deleted Content -]');
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+};
 
-//---------Module Exports---------//
+// ---------Module Exports---------//
 
 module.exports = {Api: Api, Model: PersonnalInfo};

@@ -3,22 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
+    "@types/jest": "24.0.9",
+    "@types/node": "11.10.4",
+    "@types/react": "16.8.6",
+    "@types/react-css-modules": "^4.6.2",
+    "@types/react-dom": "16.8.2",
+    "react": "^16.8.4",
+    "react-css-modules": "^4.7.9",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.5",
+    "typescript": "3.3.3333"
   },
-  "proxy": "http://portfolio-samueld28.c9users.io:8080",
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-app-rewired eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "node-sass": "^4.9.3",
-    "react-app-rewire-css-modules": "github:codebandits/react-app-rewire-css-modules",
-    "react-app-rewired": "^1.5.2",
-    "react-css-modules": "^4.7.7",
-    "sass-loader": "^7.1.0"
-  }
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

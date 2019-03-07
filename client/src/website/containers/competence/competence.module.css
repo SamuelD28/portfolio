@@ -1,0 +1,24 @@
+.competence-img{
+    min-height: 100%;
+    object-fit: cover;
+}
+.services {
+    margin-bottom: 4em;
+}
+.services-title{
+    font-family: "Karla", Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.services-list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.services-list li::before {
+    content: '\2022';
+    color: #000;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

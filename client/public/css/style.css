@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #b7c2c2; }
 
 .section{
-  padding-top : 10em;
+  padding: 5em 0;
 }
 
 .rotate {
@@ -126,278 +126,13 @@ h1, h2, h3, h4, h5, h6 {
     .bold {
       font-size: 60px; } }
 
-.intro-heading {
-  margin-bottom: 3em; }
-  .intro-heading h2 {
-    font-size: 34px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 1.5em;
-    color: #000;
-    position: relative; }
-  .intro-heading span {
-    display: block;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    color: #bfbfbf;
-    font-weight: 600; }
-
-.services-img,
 .work-img,
 .gallery {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  position: relative; }
-
-.progress-head {
-  font-size: 22px; }
-
-.progress {
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  background: none;
-  margin: 0 auto;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  position: relative; }
-
-.progress:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.progress > span {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 1; }
-
-.progress .progress-left {
-  left: 0; }
-
-.progress .progress-bar {
-  width: 100%;
-  height: 100%;
-  background: none;
-  border-width: 2px;
-  border-style: solid;
-  position: absolute;
-  top: 0;
-  border: 1px solid #000; }
-
-.progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
-  transform-origin: center left; }
-
-.progress .progress-right {
-  right: 0; }
-
-.progress .progress-right .progress-bar {
-  left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-right: 0;
-  -webkit-transform-origin: center right;
-  -ms-transform-origin: center right;
-  transform-origin: center right;
-  -webkit-animation: loading-1 1.8s linear forwards;
-  animation: loading-1 1.8s linear forwards; }
-
-.progress .progress-value {
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  font-size: 32px;
-  line-height: 125px;
-  text-align: center;
-  position: absolute;
-  top: 7.5%;
-  left: 7.5%; }
-
-.progress.blue .progress-bar {
-  border-color: #049dff; }
-
-.progress.blue .progress-value {
-  color: #049dff; }
-
-.progress.blue .progress-left .progress-bar {
-  -webkit-animation: loading-2 1.5s linear forwards 1.8s;
-  animation: loading-2 1.5s linear forwards 1.8s; }
-
-.progress.yellow .progress-bar {
-  border-color: #fdba04; }
-
-.progress.yellow .progress-value {
-  color: #fdba04; }
-
-.progress.yellow .progress-left .progress-bar {
-  -webkit-animation: loading-3 1s linear forwards 1.8s;
-  animation: loading-3 1s linear forwards 1.8s; }
-
-.progress.pink .progress-bar {
-  border-color: #ed687c; }
-
-.progress.pink .progress-value {
-  color: #ed687c; }
-
-.progress.pink .progress-left .progress-bar {
-  -webkit-animation: loading-4 0.4s linear forwards 1.8s;
-  animation: loading-4 0.4s linear forwards 1.8s; }
-
-.progress.green .progress-bar {
-  border-color: #1abc9c; }
-
-.progress.green .progress-value {
-  color: #1abc9c; }
-
-.progress.green .progress-left .progress-bar {
-  -webkit-animation: loading-5 1.2s linear forwards 1.8s;
-  animation: loading-5 1.2s linear forwards 1.8s; }
-
-@-webkit-keyframes loading-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); } }
-
-@keyframes loading-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); } }
-
-@-webkit-keyframes loading-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(150deg);
-    transform: rotate(150deg); } }
-
-@keyframes loading-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(150deg);
-    transform: rotate(150deg); } }
-
-@-webkit-keyframes loading-3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg); } }
-
-@keyframes loading-3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg); } }
-
-@-webkit-keyframes loading-4 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); } }
-
-@keyframes loading-4 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); } }
-
-@-webkit-keyframes loading-5 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(125deg);
-    transform: rotate(125deg); } }
-
-@keyframes loading-5 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(125deg);
-    transform: rotate(125deg); } }
-
-@media only screen and (max-width: 990px) {
-  .progress {
-    margin-bottom: 20px; } }
-
-.services-flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  width: 100%; }
-  .services-flex .one-third {
-    width: 55%;
-    padding: 3em 2em 3em 0; }
-  .services-flex .one-forth {
-    width: 45%; }
-    .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
-      display: inline-block; }
-      @media screen and (max-width: 768px) {
-        .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
-          height: 400px; } }
-  .services-flex .one-third, .services-flex .one-forth {
-    display: inline-block; }
-    @media screen and (max-width: 768px) {
-      .services-flex .one-third, .services-flex .one-forth {
-        width: 100%;
-        display: block; } }
-
-.services {
-  margin-bottom: 4em; }
-  .services h3 {
-    font-family: "Karla", Arial, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700; }
-  .services ul li {
-    list-style: none;
-    margin-bottom: 10px; }
-    .services ul li::before {
-      content: '\2022';
-      color: #000;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em; }
+  position: relative;
+}
 
 .work-entry {
   display: block;
@@ -683,20 +418,26 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none !important;
     outline: none !important; }
 
-.btn-primary {
+.btn-primary,
+.badge-primary {
   background: #CA82F8;
   color: #fff;
-  border: 2px solid #CA82F8; }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #d49af9 !important;
-    border-color: #d49af9 !important; }
-  .btn-primary.btn-outline {
-    background: transparent;
-    color: #4d4d4d;
-    border: 1px solid #d9d9d9; }
-    .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background: #CA82F8;
-      color: #fff; }
+  border: 2px solid #CA82F8;
+  margin: 0;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #d49af9 !important;
+  border-color: #d49af9 !important;
+}
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #4d4d4d;
+  border: 1px solid #d9d9d9;
+}
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+  background: #CA82F8;
+  color: #fff;
+}
 
 .btn-success {
   background: #5cb85c;
@@ -799,6 +540,27 @@ h1, h2, h3, h4, h5, h6 {
       right: 18px;
       visibility: visible;
       opacity: 1; }
+
+  .intro-heading {
+      margin-bottom: 3em;
+  }
+  .intro-heading h2 {
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 1.5em;
+      color: #000;
+      position: relative;
+  }
+  .intro-heading span {
+      display: block;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+      color: #bfbfbf;
+      font-weight: 600;
+  }
 
 .nav-toggle {
   cursor: pointer;

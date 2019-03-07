@@ -1,11 +1,14 @@
 import React from 'react'
 
-export default () => {
+import CSSModules from 'react-css-modules';
+import styles from './work.module.css';
+
+export default CSSModules(() => {
     return (
         <div id="work">
             <div className="container">
                 <div className="row text-center">
-                    <h2 className="bold">Works</h2>
+                    <h2 className="bold">Travaux</h2>
                 </div>
                 <div className="row">
                     <div className="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
@@ -101,4 +104,4 @@ export default () => {
             </div>
         </div>
     )
-}
+}, styles)

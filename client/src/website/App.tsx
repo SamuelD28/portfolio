@@ -20,7 +20,7 @@ enum Direction {
 class App extends Component {
 
   state = {
-    selectedSection: Number(1),
+    selectedSection: Number(2),
     sections: Array(
       <About />,
       <Competence />,

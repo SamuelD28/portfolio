@@ -3,3 +3,24 @@
     object-fit: cover;
     width: 100%;
 }
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .5;
+    height: -webkit-fill-available;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.modal-content{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 60%;
+    z-index: 10;
+}

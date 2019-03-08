@@ -8,6 +8,7 @@
     "@types/react": "16.8.6",
     "@types/react-css-modules": "^4.6.2",
     "@types/react-dom": "16.8.2",
+    "immutability-helper": "^3.0.0",
     "react": "^16.8.4",
     "react-css-modules": "^4.7.9",
     "react-dom": "^16.8.4",

@@ -1,0 +1,33 @@
+.navigation{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    background: whitesmoke;
+    z-index: 1;
+}
+
+.navigation-list{
+    list-style: none;
+    padding: 0 40px;
+}
+
+.navigation-link{
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.navigation-link:hover{
+    color: #CA82F8;
+    transition: color .2s ease-in-out;
+}
+
+.active{
+    color: #CA82F8;
+}

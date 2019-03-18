@@ -7,9 +7,6 @@ import styles from './App.module.css';
 import Navigation from './components/navigation/navigation';
 import About from './containers/about/about';
 import Competence from './containers/competence/competence';
-import Footer from './containers/footer/footer';
-import Contact from './containers/contact/contact';
-import Work from './containers/work/work';
 import Blog from './containers/blog/blog';
 
 enum Direction {
@@ -20,17 +17,7 @@ enum Direction {
 class App extends Component {
 
   state = {
-    selectedSection: Number(2),
-    sections: Array(
-      <About />,
-      <Competence />,
-      <Blog />,
-      <Contact />
-    )
-  }
-
-  DisplayCarousel = () => {
-    return this.state.sections[this.state.selectedSection];
+    selectedSection: Number(0),
   }
 
   ChangeActiveSection = (direction: Direction) => {
@@ -43,28 +30,34 @@ class App extends Component {
     }
 
     if (position < 0)
-      position = this.state.sections.length - 1;
-    else if (position > this.state.sections.length - 1)
+      position = 2;
+    else if (position > 2)
       position = 0;
 
     this.setState({ selectedSection: position });
   }
 
+  DisplayPage = () => {
+    switch (this.state.selectedSection) {
+      case 0: return <About />
+      case 1: return <Competence />
+      case 2: return <Blog />
+    }
+  }
+
+  ChangeActiveSectionTo = (sectionNumber: number) => {
+
+    if (sectionNumber < 0 || sectionNumber > 2)
+      throw new Error("Bad number");
+
+    this.setState({ selectedSection: sectionNumber });
+  }
+
   render() {
     return (
       <div>
-        <div>
-          <button
-            onClick={() => this.ChangeActiveSection(Direction.Left)}
-            className="btn btn-primary btn-outline"><i className="icon-arrow-left2"></i>
-          </button>
-          <button
-            onClick={() => this.ChangeActiveSection(Direction.Right)}
-            className="btn btn-primary btn-outline">
-            <i className="icon-arrow-right2"></i>
-          </button>
-        </div>
-        {this.DisplayCarousel()}
+        <Navigation ActiveSection={this.state.selectedSection} ChangeActiveSectionTo={this.ChangeActiveSectionTo} />
+        {this.DisplayPage()}
       </div>
     );
   }

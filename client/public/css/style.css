@@ -80,8 +80,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #fcfcfc;
   background: #b7c2c2; }
 
-.section{
+/* .section{
   padding: 5em 0;
+  min-height: -webkit-fill-available;
+  padding: 5em 0;
+  display: flex;
+  align-items: center;
+} */
+
+.container{
+    min-height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
 }
 
 .rotate {
